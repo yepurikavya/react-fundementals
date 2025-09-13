@@ -1,12 +1,19 @@
-function ProductCard({productName,price,isAvailable})
+import "./Avatar.css" 
+function ProductCard(product)
 {
-    
-    return(
-        <>
-        <p>Productname:{productName}</p>
-        <p>price:{price}</p>
-        <p>{isAvailable===true?"in stock":"out of stock"}</p>
-        </>
+    const title={
+     fontSize:'30px',
+     fontWight:'bold',
+     textAlign:'center',
+     color: 'black'
+}
+    return( 
+        <div className="container">
+        <p style={title}>Productname:{product.productName}</p>
+        <p className="price">price:{product.price}</p>
+        <p className="isAvailable">{product.isAvailable===true?<p className="isAvailable">in stock</p>:<p className="isnotAvailable">out of stock</p>}</p>
+        </div>
+        
     )
 }
-export default ProductCard
+export default ProductCard  

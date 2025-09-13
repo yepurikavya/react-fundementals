@@ -1,0 +1,34 @@
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+.isAvailable{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+.isnotAvailable{
+     font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: red
+}
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+    /* display: flex; */
+    justify-content:center;
+}
+.main{
+    display:flex;
+    gap:20px;
+}
